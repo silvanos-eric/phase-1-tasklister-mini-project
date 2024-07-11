@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -44,50 +46,55 @@ form {
   margin-top: 1.25em;
   display: flex;
   flex-direction: column;
-  gap: .5em;
+  gap: 0.5em;
   text-align: center;
-  
-  input[type='text'] {
+
+  input[type="text"] {
     text-align: center;
     border: none;
-    padding: .5em 1em;
-    border-radius: .5em;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
   }
 }
 
-
 #list {
   margin-top: 2em;
-  
+
   ul {
     list-style-type: none;
     margin-top: 1em;
   }
-  
+
   li {
-    margin-top: .25em;
+    margin-top: 0.25em;
   }
-  
+
   span {
     cursor: pointer;
+    padding: 0.25em 1em;
+  }
+
+  p {
+    font-size: 0.9rem;
+    font-style: italic;
   }
 }
 
 .btn {
   border: none;
-  padding: .25em .5em;
-  border-radius: .5em;
+  padding: 0.25em 0.5em;
+  border-radius: 0.5em;
 }
 
 .btn-success {
   background-color: green;
   color: white;
-  padding-block: .5em;
+  padding-block: 0.5em;
 }
 
 .btn-danger {
   cursor: pointer;
   background: lightcoral;
   color: white;
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
