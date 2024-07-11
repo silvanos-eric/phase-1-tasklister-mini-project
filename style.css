@@ -1,3 +1,9 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -8,10 +14,7 @@ body {
   min-height: 100%;
   min-width: 100%;
   background: linear-gradient(pink, violet);
-}
-
-button {
-  font-size: 7px;
+  padding: 3em;
 }
 
 #main-content {
@@ -34,4 +37,57 @@ button {
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
+}
+
+/* Custom CSS */
+form {
+  margin-top: 1.25em;
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  text-align: center;
+  
+  input[type='text'] {
+    text-align: center;
+    border: none;
+    padding: .5em 1em;
+    border-radius: .5em;
+  }
+}
+
+
+#list {
+  margin-top: 2em;
+  
+  ul {
+    list-style-type: none;
+    margin-top: 1em;
+  }
+  
+  li {
+    margin-top: .25em;
+  }
+  
+  span {
+    cursor: pointer;
+  }
+}
+
+.btn {
+  border: none;
+  padding: .25em .5em;
+  border-radius: .5em;
+}
+
+.btn-success {
+  background-color: green;
+  color: white;
+  padding-block: .5em;
+}
+
+.btn-danger {
+  cursor: pointer;
+  background: lightcoral;
+  color: white;
+  margin-left: .5em;
 }
